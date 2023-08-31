@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;600;700&family=Montserrat:wght@300;700&family=Roboto:wght@300;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+   background: url('../image/background.png');
+   background-size: cover;
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+nav ul img{
+    width: 150px;
+    height: 62.3px;
+    padding: 20px 30px;
+}
+
+nav ul li,nav ul a{
+    list-style: none;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+nav ul a{
+    padding: 0px 20px;
+    transition: 1s;
+}
+nav ul a:hover{
+    color: red;
+    transition: 1s;
+}
+
+.last{
+    margin-right: 100px;
+}
+
+.img-banner{
+    margin-top: 50px;
+}
+
+.grid-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+.spider{
+    width: 100%;
+}
+.banner-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.top-img{
+    margin: 50px;
+    margin-top: 90px;
+}
+.foto-title{
+    width: 100%;
+}
+.ver-mais{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.ver-mais:hover{
+    color: #ff0800a9;
+}
+
+.links{
+    margin-top: 60px;
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mais-informacoes{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.mais-informacoes:hover{
+    background-color: #ff0800a9;
+    transition: 0.5s;
+}
+
+.banner-text p{
+    color: white;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.container{
+    padding: 15%;
+}
+
+.grade-filmes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grade-jogos{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.filme-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.star-box{
+    padding: 20px 0px;
+}
+.background-filme-card{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 20px;
+    background-color: #1F1F1F;
+}
+
+.star{
+    width: 5%;
+}
+
+.section-jogos h1{
+    padding-top: 200px;
+}
+.jogos-img{
+    width: 100%;
+}
+.grade-jogos{
+    margin-bottom: 90px;
+}
+.grade-jogos p{
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    align-items: center;
+    padding-top: 20px;
+}
+footer li{
+    padding: 5px;
+}
+footer a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.direitos{
+    background-color: white;
+    height: 20px;
+    text-align: center;
+    color: black;
+    padding: 10px 0px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.redes-sociais{
+    text-align: center;
+}
+h2{
+    margin-left: 10px;
+}
+.redes-sociais a img{
+    width: 40px;
+    height: 40px;
+    margin: 10px 5px;
+}
+@media (max-width: 960px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li, nav ul a {
+        font-size: 1.5rem;
+    }
+    .logo{
+        margin-right: 0px;
+    }
+    .last{
+        margin-right: 0px;
+    }
+    .grid-banner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .grade-filmes{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .banner-text p {
+        font-size: 1rem;
+    }
+    .ver-mais {
+        font-size: 1.2rem;
+    }
+
+    .banner-text {
+        margin-bottom: 100px;
+    }
+    
+    .container{
+        padding: 15px;
+    }
+
+    .grade-filmes{
+        display: block;
+        width: 100%;
+    }
+    .background-filme-card {
+        text-align: center;
+        font-weight: 700;
+        margin: 20px 0px;
+        background-color: #1F1F1F;
+    }
+    .grade-jogos p {
+        margin-top: 10px;
+        font-size: 1rem;
+        text-align: center;
+    }
+    footer a {
+        font-size: 0.7rem;
+    }
+    footer{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
